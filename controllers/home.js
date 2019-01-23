@@ -7,3 +7,8 @@ exports.index = (req, res) => {
     title: 'Home'
   });
 };
+exports.spectral = (req, res) => {
+  res.render('spectral', {
+    title: 'Star with MiPi!'
+  });
+};
