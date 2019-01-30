@@ -1,69 +1,57 @@
 doctype html
-//
-Spectral by HTML5 UP
-  html5up.net | @ajlkn
-  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+// 
 html
   head
+  body.landing.is-preload
+    spectral
+      | by HTML5 UP
+      html5up.net | @ajlkn
+      free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
     title Spectral by HTML5 UP
-    | &#x9;&#x9;
     meta(charset='utf-8')
-    | &#x9;&#x9;
     meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
-    | &#x9;&#x9;
     link(href='/css/main.css', rel='stylesheet')
-    | &#x9;&#x9;
+    link(href='/css/main.scss', rel='stylesheet')
     noscript
       link(href='/css/noscript.css', rel='stylesheet')
-  | &#x9;
-  body.landing.is-preload
     // Page Wrapper
     #page-wrapper
       // Header
       header#header.alt
         h1
           a(href='index.html') Spectral
-        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
         nav#nav
           ul
             li.special
               a.menuToggle(href='#menu')
                 span Menu
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               #menu
                 ul
                   li
                     a(href='index.html') Home
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                   li
                     a(href='generic.html') Generic
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                   li
                     a(href='elements.html') Elements
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                   li
                     a(href='account/signup.pug') Sign Up
-                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
                   li
                     a(href='account/login.pug') Log In
       // Banner
       section#banner
         .inner
           h2 Spectral
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           p
             | Another fine responsive
             br
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;site template freebie
+            | 							site template freebie
             br
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;crafted by 
+            | 							crafted by 
             a(href='http://html5up.net') HTML5 UP
             | .
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           ul.actions.special
             li
               a.button.primary(href='#') Activate
-        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
         a.more.scrolly(href='#one') Learn More
       // One
       section#one.wrapper.style1.special
@@ -72,22 +60,18 @@ html
             h2
               | Arcu aliquet vel lobortis ata nisl
               br
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;eget augue amet aliquet nisl cep donec
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              | 								eget augue amet aliquet nisl cep donec
             p
               | Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
               br
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              | 								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
           ul.icons.major
             li
               span.icon.fa-diamond.major.style1
                 span.label Lorem
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             li
               span.icon.fa-heart-o.major.style2
                 span.label Ipsum
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             li
               span.icon.fa-code.major.style3
                 span.label Dolor
@@ -95,37 +79,32 @@ html
       section#two.wrapper.alt.style2
         section.spotlight
           .image
-            img(src='/images/pic01.jpg', alt='')
+            img(src='/css/images/pic01.jpg', alt='')
           .content
             h2
               | Magna primis lobortis
               br
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;sed ullamcorper
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              | 								sed ullamcorper
             p
               | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
         section.spotlight
           .image
-            img(src='/images/pic02.jpg', alt='')
+            img(src='/css/images/pic02.jpg', alt='')
           .content
             h2
               | Tortor dolore feugiat
               br
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;elementum magna
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              | 								elementum magna
             p
               | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
-        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
         section.spotlight
           .image
-            img(src='/images/pic03.jpg', alt='')
+            img(src='/css/images/pic03.jpg', alt='')
           .content
             h2
               | Augue eleifend aliquet
               br
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;sed condimentum
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              | 								sed condimentum
             p
               | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
       // Three
@@ -133,46 +112,33 @@ html
         .inner
           header.major
             h2 Accumsan mus tortor nunc aliquet
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             p
               | Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
               br
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              | 								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
           ul.features
             li.icon.fa-paper-plane-o
               h3 Arcu accumsan
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               p
                 | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             li.icon.fa-laptop
               h3 Ac Augue Eget
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               p
                 | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             li.icon.fa-code
               h3 Mus Scelerisque
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               p
                 | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             li.icon.fa-headphones
               h3 Mauris Imperdiet
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               p
                 | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             li.icon.fa-heart-o
               h3 Aenean Primis
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               p
                 | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             li.icon.fa-flag-o
               h3 Tortor Ut
-              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
               p
                 | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
       // CTA
@@ -180,14 +146,11 @@ html
         .inner
           header
             h2 Arcue ut vel commodo
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             p
               | Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           ul.actions.stacked
             li
               a.button.fit.primary(href='#') Activate
-            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
             li
               a.button.fit(href='#') Learn More
       // Footer
@@ -196,39 +159,28 @@ html
           li
             a.icon.fa-twitter(href='#')
               span.label Twitter
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           li
             a.icon.fa-facebook(href='#')
               span.label Facebook
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           li
             a.icon.fa-instagram(href='#')
               span.label Instagram
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           li
             a.icon.fa-dribbble(href='#')
               span.label Dribbble
-          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
           li
             a.icon.fa-envelope-o(href='#')
               span.label Email
-        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
         ul.copyright
-          li &copy; Untitled
+          li © Untitled
           li
             | Design: 
             a(href='http://html5up.net') HTML5 UP
     // Scripts
     script(src='/js/jquery.min.js')
-    | &#x9;&#x9;&#x9;
     script(src='/js/jquery.scrollex.min.js')
-    | &#x9;&#x9;&#x9;
     script(src='/js/jquery.scrolly.min.js')
-    | &#x9;&#x9;&#x9;
     script(src='/js/browser.min.js')
-    | &#x9;&#x9;&#x9;
     script(src='/js/breakpoints.min.js')
-    | &#x9;&#x9;&#x9;
     script(src='/js/util.js')
-    | &#x9;&#x9;&#x9;
     script(src='/js/main.js')
