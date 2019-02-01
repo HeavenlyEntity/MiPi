@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 /*
 	Spectral by HTML5 UP
@@ -3564,6 +3565,7 @@ input, select, textarea {
 	}
 
 		#banner h2 {
+			font-family: 'Gloria Hallelujah', cursive;
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
 			-ms-transform: scale(1);
