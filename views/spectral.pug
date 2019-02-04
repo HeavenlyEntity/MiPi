@@ -1,0 +1,236 @@
+doctype html
+//
+html
+  head
+    title MiPi
+    | &#x9;&#x9;
+    meta(charset='utf-8')
+    | &#x9;&#x9;
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    | &#x9;&#x9;
+    link(href='/assets/css/main.css', rel='stylesheet')
+    | &#x9;&#x9;
+    noscript
+      link(href='/assets/css/noscript.css', rel='stylesheet', type='text/css')
+    | &#x9;
+  body.landing.is-preload
+    // Page Wrapper
+    #page-wrapper
+      // Header
+      header#header.alt
+        h1
+          a(href='index.html') MiPi
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+        nav#nav
+          ul
+            li.special
+              a.menuToggle(href='#menu')
+                span Menu
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              #menu
+                ul
+                  li
+                    a(href='/spectral') Home
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li
+                    a(href='/theme/generic.html') Feed
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li
+                    a(href='/theme/elements.html') Products
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li
+                    a(href='/signup') Sign Up
+                  | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+                  li
+                    a(href='/login') Log In
+                  li
+                    a(href="/profile") Profile
+                  li
+                    a(href="#") Sign Out
+
+      // Banner
+      section#banner
+        .inner
+          h2 MiPi
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          p
+            | The best online showcaser
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;for your personal buisness
+            br
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;crafted by 
+            strong JsPoets
+            | 
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          ul.actions.special
+            li
+              a.button.primary(href='/signup') Get Started
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+        a.more.scrolly(href='#one') Learn More
+      // One
+      section#one.wrapper.style1.special
+        .inner
+          header.major
+            h2
+              | Arcu aliquet vel lobortis ata nisl
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;eget augue amet aliquet nisl cep donec
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          ul.icons.major
+            li
+              span.icon.fa-diamond.major.style1
+                span.label Lorem
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              span.icon.fa-heart-o.major.style2
+                span.label Ipsum
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              span.icon.fa-code.major.style3
+                span.label Dolor
+      // Two
+      section#two.wrapper.alt.style2
+        section.spotlight
+          .image
+            img(src='/images/pic01.jpg', alt='')
+          .content
+            h2
+              | Magna primis lobortis
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;sed ullamcorper
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+        section.spotlight
+          .image
+            img(src='/images/pic02.jpg', alt='')
+          .content
+            h2
+              | Tortor dolore feugiat
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;elementum magna
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+        section.spotlight
+          .image
+            img(src='/images/pic03.jpg', alt='')
+          .content
+            h2
+              | Augue eleifend aliquet
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;sed condimentum
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | Aliquam ut ex ut augue consectetur interdum. Donec hendrerit imperdiet. Mauris eleifend fringilla nullam aenean mi ligula.
+      // Three
+      section#three.wrapper.style3.special
+        .inner
+          header.major
+            h2 Accumsan mus tortor nunc aliquet
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend
+              br
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          ul.features
+            li.icon.fa-paper-plane-o
+              h3 Arcu accumsan
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li.icon.fa-laptop
+              h3 Ac Augue Eget
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li.icon.fa-code
+              h3 Mus Scelerisque
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li.icon.fa-headphones
+              h3 Mauris Imperdiet
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li.icon.fa-heart-o
+              h3 Aenean Primis
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li.icon.fa-flag-o
+              h3 Tortor Ut
+              | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+              p
+                | Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.
+      // CTA
+      section#cta.wrapper.style4
+        .inner
+          header
+            h2 Arcue ut vel commodo
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            p
+              | Aliquam ut ex ut augue consectetur interdum endrerit imperdiet amet eleifend fringilla.
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          ul.actions.stacked
+            li
+              a.button.fit.primary(href='#') Activate
+            | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+            li
+              a.button.fit(href='#') Learn More
+      // Footer
+      footer#footer
+        ul.icons
+          li
+            a.icon.fa-twitter(href='#')
+              span.label Twitter
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          li
+            a.icon.fa-facebook(href='#')
+              span.label Facebook
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          li
+            a.icon.fa-instagram(href='#')
+              span.label Instagram
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          li
+            a.icon.fa-dribbble(href='#')
+              span.label Dribbble
+          | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+          li
+            a.icon.fa-envelope-o(href='#')
+              span.label Email
+        | &#x9;&#x9;&#x9;&#x9;&#x9;&#x9;
+        ul.copyright
+          li &copy; Untitled
+          li
+            | Design: 
+            a(href='http://html5up.net') HTML5 UP
+    // Scripts
+    script(src='/assets/js/jquery.min.js')
+    | &#x9;&#x9;&#x9;
+    script(src='/assets/js/jquery.scrollex.min.js')
+    | &#x9;&#x9;&#x9;
+    script(src='/assets/js/jquery.scrolly.min.js')
+    | &#x9;&#x9;&#x9;
+    script(src='/assets/js/browser.min.js')
+    | &#x9;&#x9;&#x9;
+    script(src='/assets/js/breakpoints.min.js')
+    | &#x9;&#x9;&#x9;
+    script(src='/assets/js/util.js')
+    | &#x9;&#x9;&#x9;
+    script(src='/assets/js/main.js')
