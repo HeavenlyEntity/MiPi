@@ -21,9 +21,10 @@ html
   body.is-preload
      #page-wrapper
 
-    // Need to Fix, Can sign out only using this method. Need to implement into menu/side bar
-  include partials/header 
-      header#header
+
+  //-  Need to Fix, Can sign out only using this method. Need to implement into menu/side bar
+
+  header#header
         h1
           a(href='/spectral') Spectral
         nav#nav
@@ -47,6 +48,28 @@ html
                     a(href="/account/profile") Profile
                   li
                     a(href="#") Sign Out
+                  
+                  ul.nav.navbar-nav.navbar-right
+        if !user
+          li(class=(title === 'Login') ? 'active' : undefined)
+            a(href='/login') Login
+          li(class=(title === 'Create Account') ? 'active' : undefined)
+            a(href='/signup') Create Account
+        else
+          li.dropdown(class=(title === 'Account Management') ? 'active' : undefined)
+            a.dropdown-toggle(href='#', data-toggle='dropdown')
+              if user.profile.picture
+                img(src=user.profile.picture)
+              else
+                img(src=user.gravatar(60))
+              span= user.profile.name || user.email || user.id
+              i.caret
+            ul.dropdown-menu
+              li
+                a(href='/account') My Account
+              li.divider
+              li
+                a(href='/logout') Logout
       // Main
       .container
         include partials/flash
