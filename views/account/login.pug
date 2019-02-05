@@ -17,12 +17,11 @@ block content
       .col-sm-7
         input.form-control(type='password', name='password', id='password', placeholder='Password', required)
     .form-group
-      .col-sm-offset-4.col-sm-7
-        a.col-sm-3.button.primary.fit(type='submit')
+      .col-sm-offset-3.col-sm-7
+        button.col-sm-3.btn.btn-primary.fit(type='submit')
+          i.far.fa-user.fa-sm
           | Login
-    .form-group
-      .col-sm-offset-5.col-sm-7
-        a(href='/forgot') Forgot your password?
+        a.btn.btn-link(href='/forgot') Forgot your password?
     .form-group
       .col-sm-offset-3.col-sm-7
         hr
