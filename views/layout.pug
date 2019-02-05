@@ -21,6 +21,8 @@ html
   body.is-preload
      #page-wrapper
 
+    // Need to Fix, Can sign out only using this method. Need to implement into menu/side bar
+  include partials/header 
       header#header
         h1
           a(href='/spectral') Spectral
@@ -34,15 +36,15 @@ html
                   li
                     a(href='/spectral') Home
                   li
-                    a(href='generic.html') Feed
+                    a(href='/theme/generic.html') Feed
                   li
-                    a(href='elements.html') Products
+                    a(href='/theme/elements.html') Products
                   li
                     a(href='/signup') Sign Up
                   li
                     a(href='/login') Log In
                   li
-                    a(href="/profile") Profile
+                    a(href="/account/profile") Profile
                   li
                     a(href="#") Sign Out
       // Main
