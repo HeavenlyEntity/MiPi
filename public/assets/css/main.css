@@ -2797,7 +2797,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background: -webkit-linear-gradient(top, #81d6e3 0%,#35bed7 50%,#37bed7 51%,#65cbdd 100%); /* Chrome10-25,Safari5.1-6 */
 			color: #c8ece9;
 		}
 
@@ -2960,7 +2960,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background: -webkit-linear-gradient(top, #ce8f54 0%,#cb7123 24%,#934807 50%,#b46520 79%,#d97a27 100%); /* Chrome10-25,Safari5.1-6 */
 			color: #d3d4e4;
 		}
 
@@ -3331,8 +3331,8 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
-		color: #ffffff;
+		background: #2e3842;
+		color: #eee;
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
