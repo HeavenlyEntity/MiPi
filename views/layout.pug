@@ -23,8 +23,7 @@ html
 
       header#header
         h1
-          a(href='/spectral') MiPi 
-          
+          a(href='/spectral') Spectral
         nav#nav
           ul
             li.special
@@ -43,15 +42,17 @@ html
                   li
                     a(href='/login') Log In
                   li
-                    a(href='/account') Mi Profile
+                    a(href='/account/profile') Profile
                   li
-                    a(href='/logout') Sign Out
+                    a(href='/logout') Logout
       // Main
       .container
         include partials/flash
         block content
 
         article#main
+        header
+          h2 Elements
 
       
 
