@@ -8,7 +8,7 @@ block content
     input(type='hidden', name='_csrf', value=_csrf)
     .form-group
       .row.gtr-50.gtr-uniform
-        .col-12#banner
+        .col-12
           span.image.fit
             h2.center Mi Masterpiece's
             #myCarousel.carousel.slide(data-ride='carousel')
@@ -60,14 +60,13 @@ block content
         .col-4
           span.image.fit
             img(src='https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/6/13/0/FNK_BAKED-CLOUD-EGGS-H_s4x3.jpg.rend.hgtvcom.966.725.suffix/1497384452286.jpeg', alt='')
-        input.btn#file(type='file',name='photo', accept='image/*')
     .page-header
-      h4 Info
+      h3 Info
 
     .form-group
+      label.col-sm-3.control-label
       .col-sm-4
-        img(src='https://previews.123rf.com/images/vdat85/vdat851801/vdat85180100050/94447727-outlined-person-icon-on-transparent-background-.jpg', class='profile', width='100', height='100')
-        input.btn#file(type='file',name='photo', accept='image/*')
+        img(src=user.gravatar(), class='profile', width='100', height='100')
     .form-group
       label.col-sm-3.control-label(for='email') Email
       .col-sm-7
@@ -106,9 +105,8 @@ block content
           i.fas.fa-pencil-alt.fa-sm
           | Update Profile
 
-
   .page-header
-    h4 Change Password
+    h3 Change Password
 
   form.form-horizontal(action='/account/password', method='POST')
     input(type='hidden', name='_csrf', value=_csrf)
@@ -127,7 +125,7 @@ block content
           | Change Password
 
   .page-header
-    h4 Delete Account
+    h3 Delete Account
 
   form.form-horizontal(action='/account/delete', method='POST', onsubmit="return confirm('Are you sure you want to delete your account?');")
     .form-group
@@ -139,44 +137,44 @@ block content
           | Delete my account
 
   .page-header
-    h4 Linked Accounts
+    h3 Linked Accounts
   .form-horizontal
     .form-group
-      .col-sm-1
+      .col-sm-offset-3.col-sm-4
         if user.instagram
-          p: a.text-danger.fab.fa-instagram(href='/account/unlink/instagram') Unlink your Instagram account
+          p: a.text-danger(href='/account/unlink/instagram') Unlink your Instagram account
         else
-          p: a.fab.fa-instagram(href='/auth/instagram')
-      .col-sm-1
+          p: a(href='/auth/instagram') Link your Instagram account
+      .col-sm-offset-3.col-sm-4
         if user.google
-          p: a.text-danger.a.fab.fa-google(href='/account/unlink/google') Unlink your Google account
+          p: a.text-danger(href='/account/unlink/google') Unlink your Google account
         else
-          p: a.fab.fa-google(href='/auth/google')
-      .col-sm-1
+          p: a(href='/auth/google') Link your Google account
+      .col-sm-offset-3.col-sm-4
         if user.facebook
-          p: a.text-danger.fab.fa-facebook(href='/account/unlink/facebook') Unlink your Facebook account
+          p: a.text-danger(href='/account/unlink/facebook') Unlink your Facebook account
         else
-          p: a.fab.fa-facebook(href='/auth/facebook')
-      .col-sm-1
+          p: a(href='/auth/facebook') Link your Facebook account
+      .col-sm-offset-3.col-sm-4
         if user.twitter
-          p: a.text-danger.fab.fa-twitter(href='/account/unlink/twitter') Unlink your Twitter account
+          p: a.text-danger(href='/account/unlink/twitter') Unlink your Twitter account
         else
-          p: a.fab.fa-twitter(href='/auth/twitter')
-      .col-sm-1
+          p: a(href='/auth/twitter') Link your Twitter account
+      .col-sm-offset-3.col-sm-4
         if user.github
-          p: a.text-danger.fab.fa-github(href='/account/unlink/github') Unlink your GitHub account
+          p: a.text-danger(href='/account/unlink/github') Unlink your GitHub account
         else
-          p: a.fab.fa-github(href='/auth/github')
-      .col-sm-1
+          p: a(href='/auth/github') Link your GitHub account
+      .col-sm-offset-3.col-sm-4
         if user.linkedin
-          p: a.text-danger.fab.fa-linkedin(href='/account/unlink/linkedin') Unlink your LinkedIn account
+          p: a.text-danger(href='/account/unlink/linkedin') Unlink your LinkedIn account
         else
-          p: a.fab.fa-linkedin(href='/auth/linkedin')
-      .col-sm-1
+          p: a(href='/auth/linkedin') Link your LinkedIn account
+      .col-sm-offset-3.col-sm-4
         if user.steam
-          p: a.text-danger.fab.fa-steam(href='/account/unlink/steam') Unlink your Steam account
+          p: a.text-danger(href='/account/unlink/steam') Unlink your Steam account
         else
-          p: a.fab.fa-steam(href='/auth/steam')
+          p: a(href='/auth/steam') Link your Steam account
 
   script(src='assets/js/jquery.min.js')
   script(src='assets/js/jquery.scrollex.min.js')
