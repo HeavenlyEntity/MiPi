@@ -32,6 +32,7 @@ dotenv.load({ path: '.env' });
  */
 const homeController = require('./controllers/home');
 const spectralController = require('./controllers/spectral');
+const profileController = require('./controllers/miprofile');
 const userController = require('./controllers/user');
 const apiController = require('./controllers/api');
 const contactController = require('./controllers/contact');
@@ -121,6 +122,7 @@ app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }))
  */
 app.get('/', homeController.index);
 app.get('/spectral', spectralController.spectral);
+app.get('/miprofile', profileController.miprofile);
 app.get('/login', userController.getLogin);
 app.post('/login', userController.postLogin);
 app.get('/logout', userController.logout);

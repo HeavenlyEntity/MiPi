@@ -1,0 +1,134 @@
+doctype html
+//
+  Spectral by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+html
+  head
+    title Generic - Spectral by HTML5 UP
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, user-scalable=no')
+    meta(name='csrf-token', content=_csrf)
+    link(rel='stylesheet', href='assets/css/hackmain.css')
+    link(rel='stylesheet', href='assets/css/main.css')
+
+    // Favicon All Device Render
+    link(rel='shortcut icon', href='/favicon.ico', type='image/x-icon')
+    link(rel='icon', href='/favicon.ico', type='image/x-icon')
+    noscript
+      link(rel='stylesheet', href='assets/css/noscript.css')
+
+  body.is-preload
+    // Header
+    header#header
+      h1
+        a(href='/spectral') Spectral
+      nav#nav
+        ul
+          li.special
+            a.menuToggle(href='#menu')
+              span Menu
+            #menu
+              ul
+                li
+                  a(href='/spectral') Home
+                li
+                  a(href='generic.html') Feed
+                li
+                  a(href='/miprofile') Mi Porfolio
+                li
+                  a(href='/signup') Sign Up
+                li
+                  a(href='/login') Log In
+                li
+                  a(href='/account') Mi Settings
+                li
+                  a(href='/logout') Logout
+    // Main
+    article#main
+      .row.gtr-50.gtr-uniform
+        .col-12#banner
+          span.image.fit
+            h2.center Mi Masterpiece's
+            #myCarousel.carousel.slide(data-ride='carousel')
+              // Indicators
+              ol.carousel-indicators
+                li.active(data-target='#myCarousel', data-slide-to='0')
+                li(data-target='#myCarousel', data-slide-to='1')
+                li(data-target='#myCarousel', data-slide-to='2')
+              // Wrapper for slides
+              .carousel-inner
+                .item.active
+                  img(src='https://healthykitchen.es/wp-content/uploads/2018/10/Cauliflower-Rice-1200x700.jpg', alt='Dinner', style='width:100%;')
+                .item
+                  img(src='http://lifestylepubs.wordpress.s3-us-west-2.amazonaws.com/app/uploads/prod/sites/107/2018/12/IMG_5660..jpg')
+                .item
+                  img(src='https://cf.beautyheaven-site-au.prod.bhn.net.au/sites/default/files/inline/INSET-POACHED-EGGS.jpg', alt='Breakfast', style='width:100%;')
+              // Left and right controls
+              a.left.carousel-control(href='#myCarousel', data-slide='prev')
+                span.glyphicon.glyphicon-chevron-left.fas.fa-chevron-left
+                span.sr-only Previous
+              a.right.carousel-control(href='#myCarousel', data-slide='next')
+                span.glyphicon.glyphicon-chevron-right.fas.fa-chevron-right
+                span.sr-only Next
+                
+        .col-4
+          span.image.fit
+            img(src='http://www.jayandsarah.nz/wp-content/uploads/2018/07/IMG_9040-1.jpg', alt='')
+        .col-4
+          span.image.fit
+            img(src='https://cdn0.vox-cdn.com/uploads/chorus_asset/file/5899681/generalmuir_eater382016_burger.0.jpg', alt='')
+        .col-4
+          span.image.fit
+            img(src='http://www.unicare.net.au/wp-content/uploads/2014/06/fruit-kebab.jpg', alt='')
+        .col-4
+          span.image.fit
+            img(src='https://i.dietdoctor.com/wp-content/uploads/2016/09/lcr.jpg?auto=compress%2Cformat&w=600&h=338&fit=crop', alt='')
+        .col-4
+          span.image.fit
+            img(src='https://meggamag.com/wp-content/uploads/2018/09/watermelon-678x381.jpg', alt='')
+        .col-4
+          span.image.fit
+            img(src='https://scstylecaster.files.wordpress.com/2016/08/sweet-potato-chick-pea-buddha-bowls-tahini-sauce.jpg', alt='')
+        .col-4
+          span.image.fit
+            img(src='https://assets3.thrillist.com/v1/image/2727569/size/tmg-article_default_mobile.jpg', alt='')
+        .col-4
+          span.image.fit
+            img(src='https://assets3.thrillist.com/v1/image/1729995/size/tmg-article_default_mobile.jpg', alt='')
+        .col-4
+          span.image.fit
+            img(src='https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/6/13/0/FNK_BAKED-CLOUD-EGGS-H_s4x3.jpg.rend.hgtvcom.966.725.suffix/1497384452286.jpeg', alt='')
+        input.btn#file(type='file',name='photo', accept='image/*')
+    // Footer
+    footer#footer
+      ul.icons
+        li
+          a.icon.fa-twitter(href='#')
+            span.label Twitter
+        li
+          a.icon.fa-facebook(href='#')
+            span.label Facebook
+        li
+          a.icon.fa-instagram(href='#')
+            span.label Instagram
+        li
+          a.icon.fa-dribbble(href='#')
+            span.label Dribbble
+        li
+          a.icon.fa-envelope-o(href='#')
+            span.label Email
+      ul.copyright
+        li © Untitled
+        li
+          | Design: 
+          a(href='http://html5up.net') HTML5 UP
+    // Scripts
+    script(src='assets/js/jquery.min.js')
+    script(src='assets/js/jquery.scrollex.min.js')
+    script(src='assets/js/jquery.scrolly.min.js')
+    script(src='assets/js/browser.min.js')
+    script(src='assets/js/breakpoints.min.js')
+    script(src='assets/js/util.js')
+    script(src='assets/js/main.js')
+    script(src='assets/js/bootstrap.min.js')
