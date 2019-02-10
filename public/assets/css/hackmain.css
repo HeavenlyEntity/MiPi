@@ -3012,9 +3012,11 @@ fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-danger {
+  height: 3.43em;
   color: #fff;
   background-color: #d80017;
-  border-color: #bf0014; }
+  border-color: #bf0014;
+  }
   .btn-danger:focus, .btn-danger.focus {
     color: #fff;
     background-color: #a50012;
