@@ -2,72 +2,10 @@ extends ../layout
 
 block content
   .page-header
-    h3.center Mi Profile
+    h3 Profile Information
 
   form.form-horizontal(action='/account/profile', method='POST')
     input(type='hidden', name='_csrf', value=_csrf) 
-    .form-group
-      .row.gtr-50.gtr-uniform
-        .col-12#banner
-          span.image.fit
-            h2.center Mi Masterpiece's
-            #myCarousel.carousel.slide(data-ride='carousel')
-              // Indicators
-              ol.carousel-indicators
-                li.active(data-target='#myCarousel', data-slide-to='0')
-                li(data-target='#myCarousel', data-slide-to='1')
-                li(data-target='#myCarousel', data-slide-to='2')
-              // Wrapper for slides
-              .carousel-inner
-                .item.active
-                  img(src='https://healthykitchen.es/wp-content/uploads/2018/10/Cauliflower-Rice-1200x700.jpg', alt='Dinner', style='width:100%;')
-                .item
-                  img(src='http://lifestylepubs.wordpress.s3-us-west-2.amazonaws.com/app/uploads/prod/sites/107/2018/12/IMG_5660..jpg')
-                .item
-                  img(src='https://cf.beautyheaven-site-au.prod.bhn.net.au/sites/default/files/inline/INSET-POACHED-EGGS.jpg', alt='Breakfast', style='width:100%;')
-              // Left and right controls
-              a.left.carousel-control(href='#myCarousel', data-slide='prev')
-                span.glyphicon.glyphicon-chevron-left.fas.fa-chevron-left
-                span.sr-only Previous
-              a.right.carousel-control(href='#myCarousel', data-slide='next')
-                span.glyphicon.glyphicon-chevron-right.fas.fa-chevron-right
-                span.sr-only Next
-                
-        .col-4
-          span.image.fit
-            img(src='http://www.jayandsarah.nz/wp-content/uploads/2018/07/IMG_9040-1.jpg', alt='')
-        .col-4
-          span.image.fit
-            img(src='https://cdn0.vox-cdn.com/uploads/chorus_asset/file/5899681/generalmuir_eater382016_burger.0.jpg', alt='')
-        .col-4
-          span.image.fit
-            img(src='http://www.unicare.net.au/wp-content/uploads/2014/06/fruit-kebab.jpg', alt='')
-        .col-4
-          span.image.fit
-            img(src='https://i.dietdoctor.com/wp-content/uploads/2016/09/lcr.jpg?auto=compress%2Cformat&w=600&h=338&fit=crop', alt='')
-        .col-4
-          span.image.fit
-            img(src='https://meggamag.com/wp-content/uploads/2018/09/watermelon-678x381.jpg', alt='')
-        .col-4
-          span.image.fit
-            img(src='https://scstylecaster.files.wordpress.com/2016/08/sweet-potato-chick-pea-buddha-bowls-tahini-sauce.jpg', alt='')
-        .col-4
-          span.image.fit
-            img(src='https://assets3.thrillist.com/v1/image/2727569/size/tmg-article_default_mobile.jpg', alt='')
-        .col-4
-          span.image.fit
-            img(src='https://assets3.thrillist.com/v1/image/1729995/size/tmg-article_default_mobile.jpg', alt='')
-        .col-4
-          span.image.fit
-            img(src='https://food.fnr.sndimg.com/content/dam/images/food/fullset/2017/6/13/0/FNK_BAKED-CLOUD-EGGS-H_s4x3.jpg.rend.hgtvcom.966.725.suffix/1497384452286.jpeg', alt='')
-        input.btn#file(type='file',name='photo', accept='image/*')
-    .page-header
-      h4 Info
-
-    .form-group
-      .col-sm-4
-        img(src='https://previews.123rf.com/images/vdat85/vdat851801/vdat85180100050/94447727-outlined-person-icon-on-transparent-background-.jpg', class='profile', width='100', height='100')
-        input.btn#file(type='file',name='photo', accept='image/*')
     .form-group
       label.col-sm-3.control-label(for='email') Email
       .col-sm-7
@@ -80,14 +18,14 @@ block content
       label.col-sm-3.control-label Gender
       .col-sm-6
         label.radio.col-sm-3
-          input#demo-priority-low(type='radio', name='demo-priority', checked='')
-          label(for='demo-priority-low') Male
+          input(type='radio', checked=user.profile.gender=='male', name='gender', value='male', data-toggle='radio')
+          span Male
         label.radio.col-sm-3
-          input#demo-priority-normal(type='radio', name='demo-priority')
-          label(for='demo-priority-normal') Female
+          input(type='radio', checked=user.profile.gender=='female', name='gender', value='female', data-toggle='radio')
+          span Female
         label.radio.col-sm-3
-          input#demo-priority-high(type='radio', name='demo-priority')
-          label(for='demo-priority-high') Other
+          input(type='radio', checked=user.profile.gender=='other', name='gender', value='other', data-toggle='radio')
+          span Other
     .form-group
       label.col-sm-3.control-label(for='location') Location
       .col-sm-7
@@ -99,16 +37,19 @@ block content
     .form-group
       label.col-sm-3.control-label(for='bio') Bio
       .col-sm-7
-        input.form-control(type='text', name='bio', id='bio', value=user.profile.bio)
+        input.form-control(type='textarea', name='bio', id='bio', value=user.profile.bio)
+    .form-group
+      label.col-sm-3.control-label Gravatar
+      .col-sm-4
+        img(src=user.gravatar(), class='profile', width='100', height='100')
     .form-group
       .col-sm-offset-3.col-sm-4
         button.btn.btn.btn-primary(type='submit')
           i.fas.fa-pencil-alt.fa-sm
           | Update Profile
 
-
   .page-header
-    h4 Change Password
+    h3 Change Password
 
   form.form-horizontal(action='/account/password', method='POST')
     input(type='hidden', name='_csrf', value=_csrf)
@@ -127,7 +68,7 @@ block content
           | Change Password
 
   .page-header
-    h4 Delete Account
+    h3 Delete Account
 
   form.form-horizontal(action='/account/delete', method='POST', onsubmit="return confirm('Are you sure you want to delete your account?');")
     .form-group
@@ -139,44 +80,44 @@ block content
           | Delete my account
 
   .page-header
-    h4 Linked Accounts
+    h3 Linked Accounts
   .form-horizontal
     .form-group
-      .col-sm-1
+      .col-sm-offset-3.col-sm-4
         if user.instagram
-          p: a.text-danger.fab.fa-instagram(href='/account/unlink/instagram') Unlink your Instagram account
+          p: a.text-danger(href='/account/unlink/instagram') Unlink your Instagram account
         else
-          p: a.fab.fa-instagram(href='/auth/instagram')
-      .col-sm-1
+          p: a(href='/auth/instagram') Link your Instagram account
+      .col-sm-offset-3.col-sm-4
         if user.google
-          p: a.text-danger.a.fab.fa-google(href='/account/unlink/google') Unlink your Google account
+          p: a.text-danger(href='/account/unlink/google') Unlink your Google account
         else
-          p: a.fab.fa-google(href='/auth/google')
-      .col-sm-1
+          p: a(href='/auth/google') Link your Google account
+      .col-sm-offset-3.col-sm-4
         if user.facebook
-          p: a.text-danger.fab.fa-facebook(href='/account/unlink/facebook') Unlink your Facebook account
+          p: a.text-danger(href='/account/unlink/facebook') Unlink your Facebook account
         else
-          p: a.fab.fa-facebook(href='/auth/facebook')
-      .col-sm-1
+          p: a(href='/auth/facebook') Link your Facebook account
+      .col-sm-offset-3.col-sm-4
         if user.twitter
-          p: a.text-danger.fab.fa-twitter(href='/account/unlink/twitter') Unlink your Twitter account
+          p: a.text-danger(href='/account/unlink/twitter') Unlink your Twitter account
         else
-          p: a.fab.fa-twitter(href='/auth/twitter')
-      .col-sm-1
+          p: a(href='/auth/twitter') Link your Twitter account
+      .col-sm-offset-3.col-sm-4
         if user.github
-          p: a.text-danger.fab.fa-github(href='/account/unlink/github') Unlink your GitHub account
+          p: a.text-danger(href='/account/unlink/github') Unlink your GitHub account
         else
-          p: a.fab.fa-github(href='/auth/github')
-      .col-sm-1
+          p: a(href='/auth/github') Link your GitHub account
+      .col-sm-offset-3.col-sm-4
         if user.linkedin
-          p: a.text-danger.fab.fa-linkedin(href='/account/unlink/linkedin') Unlink your LinkedIn account
+          p: a.text-danger(href='/account/unlink/linkedin') Unlink your LinkedIn account
         else
-          p: a.fab.fa-linkedin(href='/auth/linkedin')
-      .col-sm-1
+          p: a(href='/auth/linkedin') Link your LinkedIn account
+      .col-sm-offset-3.col-sm-4
         if user.steam
-          p: a.text-danger.fab.fa-steam(href='/account/unlink/steam') Unlink your Steam account
+          p: a.text-danger(href='/account/unlink/steam') Unlink your Steam account
         else
-          p: a.fab.fa-steam(href='/auth/steam')
+          p: a(href='/auth/steam') Link your Steam account
 
   script(src='assets/js/jquery.min.js')
   script(src='assets/js/jquery.scrollex.min.js')

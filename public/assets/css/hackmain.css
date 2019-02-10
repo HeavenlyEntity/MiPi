@@ -118,7 +118,9 @@ textarea {
   margin: 0; }
 
 button {
-  overflow: visible; }
+  /* height: auto; */
+  overflow: visible;
+  }
 
 button,
 select {
@@ -2801,7 +2803,8 @@ select[multiple].input-lg,
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
-  user-select: none; }
+  user-select: none;
+  }
   .btn:focus, .btn.focus, .btn:active:focus, .btn:active.focus, .btn.active:focus, .btn.active.focus {
     outline: thin dotted;
     outline: 5px auto -webkit-focus-ring-color;
@@ -2864,9 +2867,11 @@ fieldset[disabled] a.btn {
     background-color: #121212; }
 
 .btn-primary {
+  height: 3.43em;
   color: #fff;
   background-color: #2ac5ee;
-  border-color: #13beec; }
+  border-color: #13beec;
+  }
   .btn-primary:focus, .btn-primary.focus {
     color: #fff;
     background-color: #11abd4;
@@ -3012,9 +3017,11 @@ fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-danger {
+  height: 3.43em;
   color: #fff;
   background-color: #d80017;
-  border-color: #bf0014; }
+  border-color: #bf0014;
+  }
   .btn-danger:focus, .btn-danger.focus {
     color: #fff;
     background-color: #a50012;
@@ -5056,12 +5063,13 @@ button.list-group-item-danger {
     opacity: 0.5;
     filter: alpha(opacity=50); }
 
-button.close {
-  padding: 0;
+.close#alerts {
+  height: 1.93em;
   cursor: pointer;
   background: transparent;
   border: 0;
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  }
 
 .modal-open {
   overflow: hidden; }

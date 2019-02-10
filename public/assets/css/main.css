@@ -2401,7 +2401,7 @@ input, select, textarea {
 		display: inline-block;
 		font-size: 0.8em;
 		font-weight: 600;
-		height: 3.125em;
+		height: 2.125em;
 		letter-spacing: 0.225em;
 		line-height: 3.125em;
 		max-width: 30em;
@@ -3333,6 +3333,7 @@ input, select, textarea {
 		-webkit-overflow-scrolling: touch;
 		background: #2e3842;
 		color: #eee;
+		background-image: url("../../images/pieMenu.jpg");
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -3347,6 +3348,11 @@ input, select, textarea {
 		#menu ul {
 			list-style: none;
 			padding: 0;
+		}
+
+		#menu ul :hover{
+			color: #ffffff;
+			text-shadow: 2px 2px 5px #03807C;
 		}
 
 			#menu ul > li {
@@ -3565,6 +3571,8 @@ input, select, textarea {
 	}
 
 		#banner h2 {
+			
+			background-image: url(../../images/MiPiLogo.png);
 			font-family: 'Gloria Hallelujah', cursive;
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
@@ -3575,7 +3583,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
+			color: #00ffcc00;
+			font-size: 2.3em;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -3978,8 +3987,3 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
-
-/* my css */
-.center {
-	text-align: center;
-}
