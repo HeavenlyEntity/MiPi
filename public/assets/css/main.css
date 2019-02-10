@@ -2057,17 +2057,17 @@ input, select, textarea {
 
 			}
 
-		.icon.style1 {
-			color: #00ffcc;
-		}
-
-		.icon.style2 {
-			color: #00f0ff;
-		}
-
-		.icon.style3 {
-			color: #76ddff;
-		}
+			.icon.style1 {
+				color: #bc7146;
+			}
+	
+			.icon.style2 {
+				color: #e8e677;
+			}
+	
+			.icon.style3 {
+				color: #76ff7b;
+			}
 
 /* Image */
 
@@ -2797,7 +2797,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background: -webkit-linear-gradient(top, #81d6e3 0%,#35bed7 50%,#37bed7 51%,#65cbdd 100%); /* Chrome10-25,Safari5.1-6 */
+			background: -webkit-linear-gradient(top, #81d6e3 0%,#034d5a 50%,#07515e 51%,#307e8b 100%); /* Chrome10-25,Safari5.1-6 */
 			color: #c8ece9;
 		}
 

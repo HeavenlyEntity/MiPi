@@ -2796,7 +2796,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background-color: #21b2a6;
+			background: -webkit-linear-gradient(top, #81d6e3 0%,#034d5a 50%,#07515e 51%,#307e8b 100%);
 			color: #c8ece9;
 		}
 
