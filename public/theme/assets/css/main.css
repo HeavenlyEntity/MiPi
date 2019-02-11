@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic,800,800italic");
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 
 /*
 	Spectral by HTML5 UP
@@ -23,7 +24,8 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+	}
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -2056,17 +2058,17 @@ input, select, textarea {
 
 			}
 
-		.icon.style1 {
-			color: #00ffcc;
-		}
-
-		.icon.style2 {
-			color: #00f0ff;
-		}
-
-		.icon.style3 {
-			color: #76ddff;
-		}
+			.icon.style1 {
+				color: #bc7146;
+			}
+	
+			.icon.style2 {
+				color: #e8e677;
+			}
+	
+			.icon.style3 {
+				color: #76ff7b;
+			}
 
 /* Image */
 
@@ -2400,7 +2402,7 @@ input, select, textarea {
 		display: inline-block;
 		font-size: 0.8em;
 		font-weight: 600;
-		height: 3.125em;
+		height: 2.125em;
 		letter-spacing: 0.225em;
 		line-height: 3.125em;
 		max-width: 30em;
@@ -2444,6 +2446,10 @@ input, select, textarea {
 		.button.fit {
 			width: 100%;
 		}
+		
+		#fittedBtn{
+			height: 3.125em;
+		}
 
 		input[type="submit"].small,
 		input[type="reset"].small,
@@ -2466,6 +2472,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
+			height: 3.215em;
 			background-color: #ed4933;
 			box-shadow: none !important;
 			color: #ffffff !important;
@@ -2796,7 +2803,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style1 {
-			background: -webkit-linear-gradient(top, #81d6e3 0%,#034d5a 50%,#07515e 51%,#307e8b 100%);
+			background: -webkit-linear-gradient(top, #81d6e3 0%,#034d5a 50%,#07515e 51%,#307e8b 100%); /* Chrome10-25,Safari5.1-6 */
 			color: #c8ece9;
 		}
 
@@ -2959,7 +2966,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #505393;
+			background: -webkit-linear-gradient(top, #ce8f54 0%,#cb7123 24%,#934807 50%,#b46520 79%,#d97a27 100%); /* Chrome10-25,Safari5.1-6 */
 			color: #d3d4e4;
 		}
 
@@ -3330,8 +3337,9 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
-		color: #ffffff;
+		background: #2e3842;
+		color: #eee;
+		background-image: url("../../images/pieMenu.jpg");
 		height: 100%;
 		max-width: 80%;
 		overflow-y: auto;
@@ -3346,6 +3354,11 @@ input, select, textarea {
 		#menu ul {
 			list-style: none;
 			padding: 0;
+		}
+
+		#menu ul :hover{
+			color: #ffffff;
+			text-shadow: 2px 2px 5px #03807C;
 		}
 
 			#menu ul > li {
@@ -3564,6 +3577,9 @@ input, select, textarea {
 	}
 
 		#banner h2 {
+			
+			background-image: url(../../images/MiPiLogo.png);
+			font-family: 'Gloria Hallelujah', cursive;
 			-moz-transform: scale(1);
 			-webkit-transform: scale(1);
 			-ms-transform: scale(1);
@@ -3573,7 +3589,8 @@ input, select, textarea {
 			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			display: inline-block;
-			font-size: 1.75em;
+			color: #00ffcc00;
+			font-size: 2.3em;
 			opacity: 1;
 			padding: 0.35em 1em;
 			position: relative;
@@ -3793,10 +3810,10 @@ input, select, textarea {
 
 	#main > header {
 		padding: 12em 0 10em 0 ;
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3943,10 +3960,10 @@ input, select, textarea {
 /* Landing */
 
 	body.landing #page-wrapper {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
 		background-attachment: fixed;
 		background-position: center center;
 		background-repeat: no-repeat;
@@ -3964,10 +3981,10 @@ input, select, textarea {
 
 	body.is-mobile.landing #banner,
 	body.is-mobile.landing .wrapper.style4 {
-		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
-		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../../images/banner.jpg");
+		background-image: -moz-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: -ms-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
+		background-image: linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://www.landolakes.com/RecipeManagementSystem/media/Recipe-Media-Files/Recipes/Retail/x17/16800-blue-ribbon-apple-pie-760x580.jpg?ext=.jpg");
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -3975,4 +3992,12 @@ input, select, textarea {
 
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
+	}
+/*  Mi Portfolo Page */
+
+	#miTile{
+		border:8px solid black;
+	}
+	#miTile:hover {
+			border-color: rgb(0, 194, 253);
 	}
