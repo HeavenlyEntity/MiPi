@@ -2906,9 +2906,11 @@ fieldset[disabled] a.btn {
     background-color: #fff; }
 
 .btn-success {
+  height: 3.43em;
   color: #fff;
   background-color: #0f9d58;
-  border-color: #0d864b; }
+  border-color: #0d864b;
+  }
   .btn-success:focus, .btn-success.focus {
     color: #fff;
     background-color: #0b6e3e;

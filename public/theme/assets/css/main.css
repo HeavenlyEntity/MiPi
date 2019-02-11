@@ -3432,6 +3432,12 @@ input, select, textarea {
 
 /* Header */
 
+	#headerLogo {  
+		color: #00ffcc00;
+		background-image: url('https://images.cooltext.com/5254306.png');
+		background-size: cover;
+}
+
 	#header {
 		-moz-transition: background-color 0.2s ease;
 		-webkit-transition: background-color 0.2s ease;
@@ -3552,6 +3558,7 @@ input, select, textarea {
 				pointer-events: none;
 				opacity: 0;
 			}
+
 
 /* Banner */
 
