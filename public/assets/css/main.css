@@ -165,7 +165,7 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		color: #fff;
+		color: #ffffff;
 		font-weight: 800;
 		letter-spacing: 0.225em;
 		line-height: 1em;
@@ -186,6 +186,7 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			h2 {
+				background-size: cover;
 				font-size: 1.1em;
 				line-height: 1.65em;
 			}
@@ -3577,24 +3578,25 @@ input, select, textarea {
 	}
 
 		#banner h2 {
-			
-			background-image: url(../../images/MiPiLogo.png);
-			font-family: 'Gloria Hallelujah', cursive;
-			-moz-transform: scale(1);
-			-webkit-transform: scale(1);
-			-ms-transform: scale(1);
-			transform: scale(1);
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
-			transition: transform 0.5s ease, opacity 0.5s ease;
-			display: inline-block;
-			color: #00ffcc00;
-			font-size: 2.3em;
-			opacity: 1;
-			padding: 0.35em 1em;
-			position: relative;
-			z-index: 1;
+			background-image: url(../../images/MiPiLogo.png);
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: 'Gloria Hallelujah', cursive;
+			-moz-transform: scale(1);
+			-webkit-transform: scale(1);
+			-ms-transform: scale(1);
+			transform: scale(1);
+			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
+			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
+			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
+			transition: transform 0.5s ease, opacity 0.5s ease;
+			display: inline-block;
+			color: #00ffcc00;
+			font-size: 270%;
+			opacity: 1;
+			padding: 0.35em 1em;
+			position: relative;
+			z-index: 1;
 		}
 
 			#banner h2:before, #banner h2:after {
