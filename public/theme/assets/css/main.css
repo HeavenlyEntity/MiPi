@@ -3996,8 +3996,15 @@ input, select, textarea {
 /*  Mi Portfolo Page */
 
 	#miTile{
-		border:8px solid black;
+		border: 8px solid black ;
 	}
 	#miTile:hover {
 			border-color: rgb(0, 194, 253);
+	}
+	#miTitle {
+		background-size: cover;
+
+	}
+	#miBio{
+		text-align: center;
 	}
